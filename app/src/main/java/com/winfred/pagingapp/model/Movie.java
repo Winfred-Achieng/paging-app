@@ -3,6 +3,8 @@ package com.winfred.pagingapp.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.Objects;
+
 public class Movie {
 
     @SerializedName("id")
@@ -41,4 +43,13 @@ public class Movie {
     public void setVoteAverage(double voteAverage) {
         this.voteAverage = voteAverage;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null) return false;
+        if (o == this) return true;
+        return false;
+    }
+
+
 }
