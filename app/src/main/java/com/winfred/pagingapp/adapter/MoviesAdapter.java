@@ -47,12 +47,7 @@ public class MoviesAdapter extends PagingDataAdapter<Movie, MoviesAdapter.MovieV
 
             holder.movieItemBinding.textViewRating.setText(String.valueOf(currentMovie.getVoteAverage()));
         }
-
-
-
     }
-
-
 
 
 
